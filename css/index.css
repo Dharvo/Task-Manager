@@ -1,0 +1,442 @@
+/* GENERAL FROMATTING */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #fafafa;
+	position: relative;
+}
+@font-face {
+	font-family: "MonserratB";
+	src: url("../dist/fonts/Montserrat-ExtraBold.ttf");
+}
+@font-face {
+	font-family: "Monserrat";
+	src: url("../dist/fonts/Montserrat-Regular.ttf");
+}
+
+/* TOP SECTION  */
+nav {
+	margin-bottom: 3rem;
+}
+header {
+	box-shadow: 0 4px 7px #fafafa;
+}
+h1.CompanyHead {
+	text-align: center;
+	padding: 0.5rem 0 0.9rem 0;
+	font-family: "MonserratB";
+	font-size: 60px;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	color: rgba(10, 255, 10, 0.9);
+}
+h1.CompanyHead > span {
+	color: rgba(10, 34, 255, 0.8);
+	padding-left: 1.5rem;
+}
+.flexMe {
+	display: flex;
+	justify-content: space-between;
+	margin: 5rem auto;
+}
+.logowrapper img {
+	margin-left: 3.5rem;
+	margin-top: 1rem;
+	width: 70%;
+}
+.header {
+	min-width: 55%;
+	text-align: end;
+	padding: 5rem 3.5rem 1.5rem 0;
+}
+.header h3 {
+	letter-spacing: 0.5px;
+	font-family: "MonserratB";
+	text-transform: uppercase;
+	font-size: 48px;
+	word-spacing: 0.4rem;
+	line-height: 3.8rem;
+	margin-bottom: 1.5rem;
+}
+
+.header span {
+	cursor: pointer;
+	font-family: "Monserrat";
+	font-size: 14px;
+	padding: 0 0.5rem 0 0;
+	color: #888;
+	transition: all 450ms ease;
+}
+.header span:hover {
+	color: #222;
+}
+
+/* CHART REGION  */
+main {
+	display: flex !important;
+	justify-content: space-evenly;
+}
+main > div {
+	width: 32% !important;
+}
+.hero {
+	color: #222;
+	font-family: "MonserratB";
+	font-size: 3rem;
+	line-height: 1;
+	margin: 4.5rem 0 2.2rem 2rem;
+	text-transform: uppercase;
+	word-spacing: 0.4rem;
+	letter-spacing: 0.5px;
+	border-bottom: 3px solid #555;
+	width: fit-content;
+	border-left: 10px solid transparent;
+}
+.canvasCont {
+	text-align: center;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px 1px #e9e9e9;
+	padding: 0 1rem 1.5rem;
+	background-color: #fefefe;
+	transition: all 450ms ease;
+}
+.canvasCont:hover {
+	box-shadow: 0px 0px 10px 1.2px #ddd;
+	background-color: #fff;
+	opacity: 105%;
+}
+.canvasCont canvas {
+	min-height: 220px;
+	filter: blur(0.6px);
+	-o-filter: blur(0.6px);
+	-moz-filter: blur(0.6px);
+	-webkit-filter: blur(0.6px);
+}
+.canvasCont:hover canvas {
+	filter: blur(0px);
+	-o-filter: blur(0px);
+	-moz-filter: blur(0px);
+	-webkit-filter: blur(0px);
+	opacity: 105%;
+}
+h3.CompanyHead {
+	color: #111;
+	margin: 3rem auto 1.5rem;
+	text-transform: capitalize;
+}
+
+/* CHART SMALL SCREEN FORMAT  */
+@media screen and (max-width: 850px) {
+	/* TOP SECTION  */
+	nav {
+		margin-bottom: 1.5rem;
+	}
+	h1.CompanyHead {
+		padding: 0.8rem 0 0.6rem;
+		font-size: 50px;
+	}
+	h1.CompanyHead > span {
+		padding-left: 1rem;
+	}
+	.flexMe {
+		margin: 0 !important;
+	}
+	.logowrapper img {
+		margin-left: 2rem;
+		width: 85%;
+	}
+	.header {
+		margin: 0 0 1rem -3rem;
+		padding: 7rem 2rem 1rem 0;
+	}
+	.header h3 {
+		font-size: 40px;
+		line-height: 3rem;
+	}
+	.header span {
+		font-size: 12px;
+	}
+
+	/* CHART REGION  */
+	main {
+		display: block !important;
+	}
+	main > div {
+		width: 80% !important;
+		margin: 2rem auto;
+	}
+	.hero {
+		font-size: 1.8rem;
+	}
+	.canvasCont {
+		text-align: center;
+		border-radius: 7px;
+		padding: 1rem 2rem 3rem;
+	}
+	.canvasCont canvas {
+		min-height: 150px;
+	}
+	h3.CompanyHead {
+		margin: 1.5rem auto 1rem;
+	}
+}
+
+/* TABLE SECTION  */
+
+.mainTable {
+	margin: 2rem 1% 5rem !important;
+}
+.table-bordered {
+	border: 2px solid #333 !important;
+}
+.taskHead {
+	color: #054f95;
+	font-family: "MonserratB";
+	text-transform: uppercase;
+	font-size: 3rem;
+	text-align: center;
+	word-spacing: 0.85rem;
+	letter-spacing: 0.07rem;
+}
+
+/* ADD FORM BUTTON	*/
+.addProject {
+	margin: 0 4rem 2rem 0;
+}
+.addProject > button {
+	background: linear-gradient(130deg, #06b106, #28a745) !important;
+	text-transform: uppercase;
+	font-size: 0.75rem;
+	border-width: 2px;
+	border-radius: 2px;
+}
+.dt-buttons {
+	margin-bottom: 1rem;
+	margin-left: 4rem;
+}
+button.dt-button {
+	color: #fff !important;
+	background: linear-gradient(130deg, #17a2b8, #054f95) !important;
+	text-transform: uppercase;
+	border-width: 2px !important;
+	font-size: 0.75rem !important;
+}
+/* VISIBLE COLUMNS */
+button.dt-button.buttons-columnVisibility.active {
+	color: #fff !important;
+}
+/* INVISIBLE COLUMNS */
+button.dt-button.buttons-columnVisibility {
+	color: #111 !important;
+}
+#projectTable {
+	text-align: center;
+}
+td {
+	vertical-align: middle !important;
+}
+#newRow .flexMe {
+	margin: 0 0 -0.5rem;
+}
+#newRow .flexMe svg {
+	margin: 1rem 0.3rem;
+	transition: all 350ms ease-in-out;
+}
+#newRow .flexMe svg path {
+	fill: black;
+}
+/* TABLE OPERATIONS BUTTON  */
+.delBtn {
+	padding-top: 3px;
+}
+.delBtn:hover path {
+	fill: #f22 !important;
+}
+.updateBtn {
+	border: transparent;
+	background: transparent;
+}
+.updateBtn:hover path {
+	fill: #054f95 !important;
+}
+/* TABLE HEADING COLOR */
+thead > tr > td {
+	color: #fff;
+	text-shadow: 0 0 2.5px #fffc;
+	border: 2px solid #222a !important;
+	border-width: 2px 2px 2.5px 0px !important;
+	background-color: #333;
+}
+thead > tr > td:first-of-type {
+	border-left-width: 1px !important;
+}
+
+/* TABLE EDITS  */
+.tableDate {
+	min-width: 99px;
+}
+.showErr {
+	color: #f22;
+	font-size: 11px;
+	font-family: "Monserrat";
+	padding: 0 0 0 5px;
+}
+
+/* MODAL FORM  */
+.modal {
+	background-color: rgba(1, 1, 1, 0.75); /* Black w/ opacity */
+}
+.modal-body {
+	padding: 1.5em !important;
+	pointer-events: auto;
+}
+.moveL {
+	padding-left: 1.5rem;
+	font-family: "Monserrat";
+	font-weight: bold;
+	/* font-size: 1.8rem; */
+}
+.showModal {
+	opacity: 100 !important;
+	position: absolute !important;
+	padding-top: 4rem !important;
+	display: inline-block !important;
+}
+
+/* FORM DESIGNS  */
+.form-groupped {
+	margin-bottom: 10px;
+}
+.form-control:focus {
+	border: 2px solid #000 !important;
+	box-shadow: none !important;
+}
+.form-groupped > label {
+	font-family: "Monserrat";
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 0.9rem;
+	margin-bottom: 0.35rem !important;
+	padding-left: 5px;
+}
+.form-groupped.pull {
+	margin-bottom: 1.5rem;
+	display: flex;
+	justify-content: space-between;
+}
+.form-groupped.pull > input {
+	width: 20%;
+	margin-right: 30%;
+	margin-left: 1rem;
+	border: 1px solid #ccc;
+}
+.pullBtn {
+	word-spacing: 2px;
+	text-transform: uppercase;
+	font-size: 12px !important;
+	letter-spacing: 0.25px;
+	border-radius: 2px !important;
+	padding: 7px 13px !important;
+}
+
+input,
+select {
+	border-radius: 4px;
+	padding: 4px 11px;
+}
+option,
+select {
+	font-weight: 500 !important;
+	text-transform: uppercase !important;
+}
+
+/* PRIORITY */
+option[value="high"],
+.red {
+	color: red !important;
+}
+option[value="medium"],
+.yellow {
+	color: yellow !important;
+}
+option[value="low"],
+.green {
+	color: green !important;
+}
+.highClass {
+	text-transform: uppercase;
+	background-color: #f002;
+	color: #f00;
+}
+.midClass {
+	text-transform: uppercase;
+	background-color: #ff02;
+	color: #ff0;
+}
+.lowClass {
+	text-transform: uppercase;
+	background-color: #0f02;
+	color: #0f0;
+}
+
+/* STATUS  */
+option[value="open"],
+.openG {
+	color: rgb(11, 255, 20) !important;
+}
+option[value="on Going"],
+.goingG {
+	color: rgb(216, 122, 0) !important;
+}
+option[value="closed"],
+.closedG {
+	color: rgb(255, 0, 0) !important;
+}
+option[value="done"],
+.doneG {
+	color: rgb(0, 150, 35) !important;
+}
+.openClass {
+	text-transform: uppercase;
+	background-color: rgba(11, 255, 20, 0.2);
+	color: rgba(11, 255, 20);
+}
+.onGoingClass {
+	text-transform: uppercase;
+	background-color: rgba(216, 122, 0, 0.2);
+	color: rgb(216, 122, 0);
+}
+.closedClass {
+	text-transform: uppercase;
+	background-color: rgba(255, 0, 0, 0.2);
+	color: rgb(255, 0, 0);
+}
+.doneClass {
+	text-transform: uppercase;
+	background-color: rgba(0, 150, 35, 0.2);
+	color: rgb(0, 150, 35);
+}
+
+/* MULTI SELECT INPUT  */
+div#teamSelect_multiSelect,
+div#teamSelectUpd_multiSelect {
+	width: 100%;
+}
+label#teamSelect_inputCount,
+label#teamSelectUpd_inputCount {
+	width: 33px;
+	margin: 0 !important;
+	left: -60px !important;
+}
+label.multiselect-dropdown-arrow {
+	margin-left: -10% !important;
+}
+div#teamSelect_itemList,
+div#teamSelectUpd_itemList {
+	width: 90%;
+	padding-top: 1em !important;
+	padding-left: 1em !important;
+}
