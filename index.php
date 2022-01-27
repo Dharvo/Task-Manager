@@ -7,6 +7,7 @@
 			name="viewport"
 			content="width=device-width, initial-scale=10"
 		/>
+		<meta name="description" content="task manager graph dashboard admin team tasks" />
 		<title>Project Manager</title>
 		<!--	CSS FILES 	-->
 		<link
@@ -17,8 +18,8 @@
 		/>
 		<link rel="shortcut icon" href="./dist/Company_Logo.png" type="image/png" />
 		<!--		CHART.JS JAVASCRIPT		 	-->
-		<script src="./dist/chart.js/dist/chart.js"></script>
-		 <script
+		<script defer src="./dist/chart.js/dist/chart.js"></script>
+		 <script defer
 			src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.4.1/chart.min.js"
 			integrity="sha512-5vwN8yor2fFT9pgPS9p9R7AszYaNn0LkQElTXIsZFCL7ucT8zDCAqlQXDdaqgA1mZP47hdvztBMsIoFxq/FyyQ=="
 			crossorigin="anonymous"
@@ -29,23 +30,23 @@
 		type="text/css"
 		href="./dist/multiselect/MSFmultiSelect-2.3/msfmultiselect.css"
 		/> 
-		 <script src="./dist/multiselect/MSFmultiSelect-2.3/msfmultiselect.min.js"></script> 
+		 <script defer src="./dist/multiselect/MSFmultiSelect-2.3/msfmultiselect.min.js"></script> 
 		<link
 			type="text/css"
 			rel="stylesheet"
 			href="./dist/multiselect/multiselect.css"
 		/>
-		<script src="./dist/multiselect/scripts/multiselect.js"></script>
-		<script src="./dist/multiselect/multiselect.min.js"></script>
+		<script src="./dist/multiselect/scripts/multiselect.js" defer></script>
+		<script src="./dist/multiselect/multiselect.min.js" defer></script>
 
 		<!--   	  JQUERY  	  -->
-		<script src="./js/jquery-3.6.0.js" type="text/javascript"></script>
-		 <script
+		<script src="./js/jquery-3.6.0.js" type="text/javascript" defer></script>
+		 <script defer
 			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
 			integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
 			crossorigin="anonymous"
 		></script>
-		<script
+		<script defer
 			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
 			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
 			crossorigin="anonymous"
@@ -56,10 +57,10 @@
 			rel="stylesheet"
 			href="./dist/tableFilter/buttons.dataTables.min.css"
 		/>
-		<script src="./dist/tableFilter/jquery.dataTables.min.js"></script>
-		<script src="./dist/tableFilter/dataTables.fixedHeader.min.js"></script>
-		<script src="./dist/tableFilter/dataTables.buttons.min.js"></script>
-		<script src="./dist/tableFilter/buttons.colVis.min.js"></script>
+		<script defer src="./dist/tableFilter/jquery.dataTables.min.js"></script>
+		<script defer src="./dist/tableFilter/dataTables.fixedHeader.min.js"></script>
+		<script defer src="./dist/tableFilter/dataTables.buttons.min.js"></script>
+		<script defer src="./dist/tableFilter/buttons.colVis.min.js"></script>
 
 		<!--	 	BOOOTSTRAP		 -->
 		 <link
@@ -68,13 +69,13 @@
 			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
 			crossorigin="anonymous"
 		/>
-		<script
+		<script defer
 			src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
 			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
 			crossorigin="anonymous"
 		></script> 
 		<link rel="stylesheet" href="./css/bootstrap.min.css" type="text/css" />
-		<script src="./js/bootstrap.min.js"></script>
+		<script defer src="./js/bootstrap.min.js"></script>
 	</head>
 	<body>
 		<nav>
@@ -595,7 +596,7 @@
 			</div>
 		</div>
 	</div>
-		<script src="./js/ajaxMethod.js"></script>
-		<script src="./js/index.js" type="text/javascript"></script>
+		<script defer src="./js/ajaxMethod.js"></script>
+		<script defer src="./js/index.js" type="text/javascript"></script>
 	</body>
 </html>
